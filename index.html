@@ -3,20 +3,92 @@ html<!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мой первый сайт</title>
+    <title>Запчасти Chery Tiggo 7 | Магазин автозапчастей</title>
     <style>
-        body { font-family: sans-serif; background: #f0f2f5; text-align: center; padding: 50px; }
-        .card { background: white; max-width: 500px; margin: 0 auto; padding: 30px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
-        h1 { color: #333; }
-        p { color: #666; font-size: 18px; }
-        .btn { display: inline-block; background: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin-top: 15px; }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background: #f4f6f9; color: #333; padding-bottom: 60px; }
+        header { background: #1a252f; color: white; padding: 20px; text-align: center; }
+        header h1 { font-size: 24px; margin-bottom: 5px; }
+        header p { color: #bbcddc; font-size: 14px; }
+        
+        .container { max-width: 1100px; margin: 20px auto; padding: 0 15px; }
+        
+        .promo-banner { background: #e74c3c; color: white; padding: 15px; text-align: center; border-radius: 8px; margin-bottom: 25px; font-weight: bold; }
+        
+        .catalog-title { margin-bottom: 15px; font-size: 20px; border-left: 5px solid #e74c3c; padding-left: 10px; }
+        
+        /* Сетка товаров */
+        .products-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px; margin-bottom: 30px; }
+        .product-card { background: white; border-radius: 8px; padding: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); display: flex; flex-direction: column; justify-content: space-between; }
+        .product-card h3 { font-size: 16px; margin-bottom: 10px; height: 44px; overflow: hidden; }
+        .sku { font-size: 12px; color: #888; margin-bottom: 10px; }
+        .price { font-size: 18px; font-weight: bold; color: #2c3e50; margin-bottom: 15px; }
+        .badge { display: inline-block; padding: 3px 8px; font-size: 11px; border-radius: 4px; margin-bottom: 10px; width: max-content; }
+        .in-stock { background: #e8f5e9; color: #2e7d32; }
+        
+        /* Кнопка заказа */
+        .btn-order { display: block; background: #27ae60; color: white; text-align: center; padding: 10px; text-decoration: none; border-radius: 5px; font-weight: bold; transition: 0.2s; }
+        .btn-order:hover { background: #219653; }
+        
+        /* Контакты */
+        .contacts-block { background: white; padding: 25px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); text-align: center; }
+        .contacts-block h2 { margin-bottom: 15px; }
+        .messenger-buttons { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; margin-top: 15px; }
+        .btn-msgr { padding: 12px 25px; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; }
+        .tg { background: #29b6f6; }
+        .wa { background: #25d366; }
     </style>
 </head>
 <body>
-    <div class="card">
-        <h1>Привет, мир! 🚀</h1>
-        <p>Это мой самый первый настоящий сайт, созданный вручную и размещенный на GitHub Pages бесплатно.</p>
-        <a href="#" class="btn">Нажми меня</a>
-    </div>
-</body>
-</html>
+
+    <header>
+        <h1>Автозапчасти Chery Tiggo 7</h1>
+        <p>Оригиналы и качественные аналоги в наличии и под заказ</p>
+    </header>
+
+    <div class="container">
+        
+        <div class="promo-banner">
+            🔥 Скидка 10% на первый заказ расходников для ТО! Напишите нам код: TIGGO7
+        </div>
+
+        <h2 class="catalog-title">Популярные запчасти в наличии</h2>
+        
+        <div class="products-grid">
+            <!-- Товар 1 -->
+            <div class="product-card">
+                <div>
+                    <span class="badge in-stock">В наличии</span>
+                    <h3>Фильтр масляный Chery Tiggo 7</h3>
+                    <p class="sku">Артикул: 481H-1012010</p>
+                </div>
+                <div>
+                    <p class="price">450 ₽</p>
+                    <a href="https://t.me! Хочу купить Масляный фильтр на Тигго 7" target="_blank" class="btn-order">Заказать</a>
+                </div>
+            </div>
+
+            <!-- Товар 2 -->
+            <div class="product-card">
+                <div>
+                    <span class="badge in-stock">В наличии</span>
+                    <h3>Колодки тормозные передние</h3>
+                    <p class="sku">Артикул: T15-3501080</p>
+                </div>
+                <div>
+                    <p class="price">1 800 ₽</p>
+                    <a href="https://t.me! Хочу купить Передние колодки на Тигго 7" target="_blank" class="btn-order">Заказать</a>
+                </div>
+            </div>
+
+            <!-- Товар 3 -->
+            <div class="product-card">
+                <div>
+                    <span class="badge in-stock">В наличии</span>
+                    <h3>Фильтр воздушный</h3>
+                    <p class="sku">Артикул: T15-1109111</p>
+                </div>
+                <div>
+                    <p class="price">650 ₽</p>
+                    <a href="https://t.me! Хочу купить Воздушный фильтр на Тигго 7" target="_blank" class="btn-order">Заказать</a>
+                </div>
